@@ -200,6 +200,9 @@ etc/firmware/sensorhubver.txt
 bin/stml0xx
 lib/hw/sensorhub.msm8916.so
 
+# STLport
+vendor/lib/libstlport.so
+
 # Thermal
 bin/thermal-engine
 vendor/lib/libthermalclient.so
