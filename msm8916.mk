@@ -63,13 +63,8 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
-    tinymix
-
-# Only build audio HAL on non-lux devices
-ifeq ($(filter lux,$(TARGET_DEVICE)),)
-PRODUCT_PACKAGES += \
+    tinymix \
     audio.primary.msm8916
-endif
 
 PRODUCT_COPY_FILES +=  \
     $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
